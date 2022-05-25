@@ -1,8 +1,12 @@
 import { FC, useState } from 'react';
-import { Form, Input, Button, Row, Col, message } from 'antd';
 import logoLogin from '../../assets/logo.jpeg';
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../../firebaseConfig";
+import message from 'antd/lib/message';
+import { Col, Row } from 'antd/lib/grid';
+import Button from 'antd/lib/button';
+import Form from 'antd/lib/form';
+import Input from 'antd/lib/input';
 
 interface Account {
   email: string;
