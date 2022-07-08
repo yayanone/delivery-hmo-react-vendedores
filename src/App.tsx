@@ -2,7 +2,7 @@ import './App.css';
 import MyRouter from './router';
 import { AuthProvider } from './context/AuthContext';
 
-function App() {
+const App = () => {
   return (
     <AuthProvider>
       <MyRouter />

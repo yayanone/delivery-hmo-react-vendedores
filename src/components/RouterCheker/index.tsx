@@ -12,10 +12,11 @@ const RoterChecker = () => {
   useEffect(() => {
     if(!user && location.pathname !== "/login") {
       navigate('/login');   
+      return;
     }
 
-    if(user && (location.pathname === '/login' || location.pathname === '/')) {
-      navigate('/ventas');
+    if(user && location.pathname === '/login') {
+      navigate('/');
     }
   }, [user, location]);
   

@@ -1,4 +1,4 @@
-import { FC, useState } from 'react';
+import { useState } from 'react';
 import { Form, Input, Button, Row, Col, message } from 'antd';
 import logoLogin from '../../assets/logo.jpeg';
 import { signInWithEmailAndPassword } from "firebase/auth";
@@ -9,7 +9,7 @@ interface Account {
   passowrd: string;
 }
 
-const Login: FC = () => {
+const Login = () => {
   const [account, setAccount] = useState<Account>({email: "", passowrd: ""});
   const [loading, setLoading] = useState<boolean>(false);
   
