@@ -9,7 +9,7 @@ interface Account {
   passowrd: string;
 }
 
-//hola
+//hola2
 
 const Login = () => {
   const [account, setAccount] = useState<Account>({email: "", passowrd: ""});
